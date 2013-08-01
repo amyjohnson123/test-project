@@ -19,10 +19,16 @@
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 #
-# A path which all have the same layout
+
+ # A path which all have the same layout
 with_layout :layout do
    page "/work/*"
  end
+ 
+
+page "/index.html", :layout => :layout2
+
+ 
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
